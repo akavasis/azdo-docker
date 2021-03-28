@@ -2,7 +2,7 @@ ARG BASE_IMAGE
 
 ARG IMAGE_TAG
 
-FROM $(env.BASE_IMAGE):$(env.IMAGE_TAG)
+FROM $BASE_IMAGE:$IMAGE_TAG
 
 # To make it easier for build and release pipelines to run apt-get,
 # configure apt to not require confirmation (assume the -y argument by default)
