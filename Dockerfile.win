@@ -1,0 +1,11 @@
+ARG BASE_IMAGE
+
+ARG IMAGE_TAG
+
+FROM ${BASE_IMAGE}:${IMAGE_TAG} 
+
+WORKDIR /azp
+
+COPY start.ps1 .
+
+CMD powershell .\start.ps1
