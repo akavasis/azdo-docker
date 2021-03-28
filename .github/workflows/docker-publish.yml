@@ -30,4 +30,4 @@ jobs:
 
       - name: Run tests
         run: |
-            docker build . --build-arg BASE_IMAGE=$BASE_IMAGE --build-arg IMAGE_TAG=$IMAGE_TAG --file Dockerfile.linux
+            docker build . --build-arg BASE_IMAGE=${{BASE_IMAGE}} --build-arg IMAGE_TAG=${{IMAGE_TAG}} --file Dockerfile.linux
